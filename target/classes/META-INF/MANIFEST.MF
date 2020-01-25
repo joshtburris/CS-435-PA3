@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1574198807913
+Build-Jdk: 1.8.0_51
+Built-By: joshtb
+Bundle-ClassPath: .,lib/guava-13.0.1.jar
+Bundle-ManifestVersion: 2
+Bundle-Name: CDAP Spark Java App Project
+Bundle-SymbolicName: joshtb.PA3
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *;inline=false;scope=compile
+Embed-Directory: lib
+Embed-Transitive: true
+Embedded-Artifacts: lib/guava-13.0.1.jar;g="com.google.guava";a="guava";
+ v="13.0.1"
+Import-Package: javax.annotation;version="[1.2,2)",org.apache.spark.api.
+ java,org.apache.spark.api.java.function,org.apache.spark.sql,scala;vers
+ ion="[2.11,3)",sun.misc
+Main-Class: PA3.SparkPageRankApp
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.3.0.201609221906
